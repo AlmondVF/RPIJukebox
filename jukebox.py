@@ -34,19 +34,19 @@ mlplayer.set_media_player(player)
 mlplayer.set_media_list(medialist)
 #defining the shutdown button
 def shutdown():
-    check_call(['sudo', 'poweroff'])
+    check_call(['sudo', 'shutdown', '-h', 'now'])
 while True:
     if playpausebutton.is_pressed:
         if mlplayer.is_playing():
-            mlplayer.pause()
+            mlplayer.pause() #pauses the music when the playpausebutton is pressed
         else:
-            mlplayer.play()
+            mlplayer.play() #plays the music when the playpausebutton is pressed
     elif stopbutton.is_pressed:
-        mlplayer.stop()
+        mlplayer.stop() #stops the music when the stopbutton is pressed
     elif trackforwardsbutton.is_pressed:
-        mlplayer.previous()
+        mlplayer.previous() #skips forwards one track when the trackforwardsbutton is pressed
     elif trackbackbutton.is_pressed:
-        mlplayer.next()
+        mlplayer.next() #skips backwards one track when the trackbackbutton is pressed
     elif shutdownbutton.when_pressed:
-        shutdown()
+        shutdown() #shuts down the pi when the shutdownbuttonis pressed
     elif playlistbutton.is_pressed:
