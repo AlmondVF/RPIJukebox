@@ -18,8 +18,8 @@ ledbutton = gpiozero.Button(8)
 if len(sys.argv) <1:
     print('Please specify a folder') #for testing, won't be kept for non-lcd V1
     sys.exit(1)
-folder1 = sys.argv[1]
-files = glob.glob(folder1="/*.mp3")
+folder = sys.argv[1]
+files = glob.glob(folder="/*.mp3")
 if len(files) == 0:
     print('No mp3 files in directory', folder,'..exiting') #for testing, won't be kept for non-lcd V1
     sys.exit(1)
