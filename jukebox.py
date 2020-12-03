@@ -48,6 +48,5 @@ while True:
     elif trackbackbutton.is_pressed:
         mlplayer.next()
     elif shutdownbutton.when_pressed:
-        shutdown
+        shutdown()
     elif playlistbutton.is_pressed:
-        
