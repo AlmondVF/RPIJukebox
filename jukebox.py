@@ -13,7 +13,7 @@ shutdownbutton = gpiozero.Button(7)
 #button to change the led mode
 ledbutton = gpiozero.Button(8)
 #setting which mp3 folder to use
-if len(sys.argv) <1:
+if len(sys.argv) <=1:
     print('Please specify a folder') #for testing, won't be kept for non-lcd V1
     sys.exit(1)
 folder = sys.argv[1]
