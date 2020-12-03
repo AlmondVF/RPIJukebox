@@ -18,8 +18,8 @@ ledbutton = gpiozero.Button(8)
 if len(sys.argv) <=1:
     print('Please specify a folder')
     sys.exit(1)
-folder = sys.argv[1]
-files = glob.glob(folder="/*.mp3")
+folder1 = sys.argv[1]
+files = glob.glob(folder1="/*.mp3")
 if len(files) == 0:
     print('No mp3 files in directory', folder,'..exiting')
     sys.exit(1)
@@ -35,7 +35,6 @@ mlplayer.set_media_list(medialist)
 #defining the shutdown button
 def shutdown():
     check_call(['sudo', 'poweroff'])
-shutdownbutton.when_pressed = shutdown
 while True:
     if playpausebutton.is_pressed:
         if mlplayer.is_playing():
@@ -48,4 +47,7 @@ while True:
         mlplayer.previous()
     elif trackbackbutton.is_pressed:
         mlplayer.next()
+    elif shutdownbutton.when_pressed:
+        shutdown
     elif playlistbutton.is_pressed:
+        
