@@ -1,7 +1,5 @@
 import gpiozero, time, random, sys, vlc
 from subprocess import check_call
-#button for changing playlist
-playlistbutton = gpiozero.Button(2)
 #button for skipping back one track
 trackbackbutton = gpiozero.Button(3)
 #button for play/pause control
@@ -49,4 +47,3 @@ while True:
         mlplayer.next() #skips backwards one track when the trackbackbutton is pressed
     elif shutdownbutton.when_pressed:
         shutdown() #shuts down the pi when the shutdownbutton is pressed
-    elif playlistbutton.is_pressed:
