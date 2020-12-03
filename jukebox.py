@@ -48,5 +48,5 @@ while True:
     elif trackbackbutton.is_pressed:
         mlplayer.next() #skips backwards one track when the trackbackbutton is pressed
     elif shutdownbutton.when_pressed:
-        shutdown() #shuts down the pi when the shutdownbuttonis pressed
+        shutdown() #shuts down the pi when the shutdownbutton is pressed
     elif playlistbutton.is_pressed:
