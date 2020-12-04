@@ -55,7 +55,7 @@ mlplayer.set_media_list(medialist)
 
 #defining the shutdown button
 def shutdown():
-    check_call(['sudo', 'shutdown', '-h', 'now'])
+    check_call(['sudo', 'poweroff'])
 while True:
     if playpausebutton.is_pressed:
         if mlplayer.is_playing():
