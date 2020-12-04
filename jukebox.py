@@ -50,3 +50,10 @@ while True:
 
 #LED setup
 leds = gpiozero.LEDBoard(9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26)
+ledmode1 ={
+while True:
+    leds.on()
+    time.sleep(1)
+    leds.off()
+    time.sleep(1)
+     }
