@@ -49,7 +49,24 @@ while True:
         shutdown() #shuts down the pi when the shutdownbutton is pressed
 
 #LED setup
-
+led1 = gpiozero.PWMLED(9)
+led2 = gpiozero.PWMLED(10)
+led3 = gpiozero.PWMLED(11)
+led4 = gpiozero.PWMLED(12)
+led5 = gpiozero.PWMLED(13)
+led6 = gpiozero.PWMLED(14)
+led7 = gpiozero.PWMLED(15)
+led8 = gpiozero.PWMLED(16)
+led9 = gpiozero.PWMLED(17)
+led10 = gpiozero.PWMLED(18)
+led11 = gpiozero.PWMLED(19)
+led12 = gpiozero.PWMLED(20)
+led13 = gpiozero.PWMLED(21)
+led14 = gpiozero.PWMLED(22)
+led15 = gpiozero.PWMLED(23)
+led16 = gpiozero.PWMLED(24)
+led17 = gpiozero.PWMLED(25)
+led18 = gpiozero.PWMLED(26)
 
 #First LED mode
 ledmode1 ={
