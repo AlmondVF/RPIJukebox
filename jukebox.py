@@ -47,3 +47,6 @@ while True:
         mlplayer.next() #skips backwards one track when the trackbackbutton is pressed
     elif shutdownbutton.when_pressed:
         shutdown() #shuts down the pi when the shutdownbutton is pressed
+
+#LED setup
+leds = gpiozero.LEDBoard(9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26)
