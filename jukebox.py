@@ -67,14 +67,31 @@ led15 = gpiozero.PWMLED(23)
 led16 = gpiozero.PWMLED(24)
 led17 = gpiozero.PWMLED(25)
 led18 = gpiozero.PWMLED(26)
+leds = gpiozero.PWMLED(9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26)
 
 #First LED mode is flash on off on off ...
-ledmode1 ={
+ledmode1 = {
 while True:
+    time.sleep(1)
+    leds.value = 0 #LEDs are off
+    time.sleep(1)
+    leds.value = 1 #LEDs are on
+}
 
-     }
 #second Led mode is fade on fade off ...
 ledmode2 = {
 while True:
+    leds.pulse() #LEDs fade in and out continiously
+}
 
+#third LED mode is always on
+ledmode3 = {
+while True:
+    leds.value = 1 #LEDs are on
+}
+
+#fourth LED mode is always off
+ledmode4 = {
+while True:
+    leds.value = 0 #LEDs are off
 }
