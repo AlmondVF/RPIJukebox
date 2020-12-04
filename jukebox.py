@@ -1,4 +1,4 @@
-import gpiozero, time, random, sys, vlc
+import gpiozero, time, random, sys, vlc, signal
 from subprocess import check_call
 #button for skipping back one track
 trackbackbutton = gpiozero.Button(3)
@@ -106,3 +106,4 @@ ledmode4 = {
 while True:
     leds.value = 0 #LEDs are off
 }
+signal.pause()
