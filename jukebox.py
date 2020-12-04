@@ -68,7 +68,7 @@ led16 = gpiozero.PWMLED(24)
 led17 = gpiozero.PWMLED(25)
 led18 = gpiozero.PWMLED(26)
 
-#First LED mode
+#First LED mode is flash on off on off
 ledmode1 ={
 while True:
 
