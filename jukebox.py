@@ -49,13 +49,18 @@ while True:
         shutdown() #shuts down the pi when the shutdownbutton is pressed
 
 #LED setup
-leds = gpiozero.LEDBoard(9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26)
+leds1 = gpiozero.LEDBoard(9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26)
 
 #First LED mode
 ledmode1 ={
 while True:
-    leds.on()
+    leds1.on()
     time.sleep(1)
-    leds.off()
+    leds1.off()
     time.sleep(1)
      }
+
+ledmode2 = {
+while True:
+
+}
