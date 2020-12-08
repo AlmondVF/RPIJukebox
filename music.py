@@ -13,7 +13,7 @@ for song in listsOfSongs:
         pygame.mixer.music.load(str(file_path))
         pygame.mixer.music.play()
         time.sleep(10)
-        pygame.mixer.music.skip()
+        pygame.mixer.music.stop()
         time.sleep(5)
         pygame.mixer.music.play()
         print('Playing ' + song)
