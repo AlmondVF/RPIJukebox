@@ -5,9 +5,9 @@ import time
 pygame.init()
 pygame.mixer.init()
 
-listsOfSongs = os.listdir('/home/almondvf/Music')
+ListsOfSongs = os.listdir('/home/almondvf/Music')
 
-for song in listsOfSongs:
+for song in ListsOfSongs:
     if song.endswith('.mp3'):
         file_path = '/home/almondvf/Music/' + song
         pygame.mixer.music.load(str(file_path))
