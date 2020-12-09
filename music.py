@@ -43,14 +43,15 @@ for song in ListsOfSongs:
         print('Playing ' + song)
         while pygame.mixer.music.get_busy() == True:
             continue
-elif ledbutton.is_pressed:
-    if ledmode = ledmode1:
+while True:
+    if ledbutton.is_pressed:
+        if ledmode = ledmode1:
         ledmode = ledmode2
-    elif ledmode = ledmode2:
+        elif ledmode = ledmode2:
         ledmode = ledmode3
-    elif ledmode = ledmode3:
+        elif ledmode = ledmode3:
         ledmode = ledmode4
-    elif ledmode = ledmode4:
+        elif ledmode = ledmode4:
         ledmode = ledmode1
 
 #First LED mode is flash on off on off ...
