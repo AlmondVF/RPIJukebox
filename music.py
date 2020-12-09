@@ -47,39 +47,39 @@ while pygame.mixer.music.get_busy() == True:
     continue
 while True:
     if ledbutton.gpiozero.is_pressed:
-        if ledmode = ledmode1:
-        ledmode = ledmode2
-        elif ledmode = ledmode2:
-        ledmode = ledmode3
-        elif ledmode = ledmode3:
-        ledmode = ledmode4
-        elif ledmode = ledmode4:
-        ledmode = ledmode1
+        if ledmode = ledmode1():
+        ledmode = ledmode2()
+    elif ledmode = ledmode2():
+        ledmode = ledmode3()
+    elif ledmode = ledmode3():
+        ledmode = ledmode4()
+    elif ledmode = ledmode4():
+        ledmode = ledmode1()
 
 #First LED mode is flash on off on off ...
 def ledmode1():
     while True:
         time.sleep(1)
-        leds.gpiozero.value = 0 #LEDs are off
+        gpiozero.leds.value = 0 #LEDs are off
         time.sleep(1)
-        leds.gpiozero.value = 1 #LEDs are on
+        gpiozero.leds.value = 1 #LEDs are on
 
 #second Led mode is fade on fade off ...
 def ledmode2():
     while True:
-        leds.gpiozero.pulse() #LEDs fade in and out continiously
+        gpiozero.leds.pulse() #LEDs fade in and out continiously
 
 
 #third LED mode is always on
 def ledmode3():
     while True:
-        leds.gpiozero.value = 1 #LEDs are on
+        gpiozero.leds.value = 1 #LEDs are on
 
 
 #fourth LED mode is always off
 def ledmode4():
     while True:
-        leds.gpiozero.value = 0 #LEDs are off
+        gpiozero.leds.value = 0 #LEDs are off
 
 
 signal.pause()
