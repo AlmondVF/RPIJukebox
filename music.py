@@ -59,28 +59,28 @@ while True:
 #First LED mode is flash on off on off ...
 ledmode1 = {
 while True:
-time.sleep(1)
-leds.gpiozero.value = 0 #LEDs are off
-time.sleep(1)
-leds.gpiozero.value = 1 #LEDs are on
+    time.sleep(1)
+    leds.gpiozero.value = 0 #LEDs are off
+    time.sleep(1)
+    leds.gpiozero.value = 1 #LEDs are on
 }
 
 #second Led mode is fade on fade off ...
 ledmode2 = {
 while True:
-leds.gpiozero.pulse() #LEDs fade in and out continiously
+    leds.gpiozero.pulse() #LEDs fade in and out continiously
 }
 
 #third LED mode is always on
 ledmode3 = {
 while True:
-leds.gpiozero.value = 1 #LEDs are on
+    leds.gpiozero.value = 1 #LEDs are on
 }
 
 #fourth LED mode is always off
 ledmode4 = {
 while True:
-leds.gpiozero.value = 0 #LEDs are off
+    leds.gpiozero.value = 0 #LEDs are off
 }
 
 signal.pause()
