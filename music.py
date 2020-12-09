@@ -29,20 +29,22 @@ for song in ListsOfSongs:
         file_path = '/home/almondvf/Music/' + song
         pygame.mixer.music.load(str(file_path))
         pygame.mixer.music.play()
-        if stopbutton.gpiozero.is_pressed:
-            pygame.mixer.music.stop()
-        elif playpausebutton.gpiozero.is_pressed:
-            if pygame.mixer.music.get_busy() == True:
-                pygame.mixer.music.pause()
-            else:
-                pygame.mixer.music.play()
-        elif trackforwardsbutton.gpiozero.is_pressed:
-            #do something to skip forwards
-        elif trackbackbutton.gpiozero.is_pressed:
-            #do something else to skip backwards
         print('Playing ' + song)
-        while pygame.mixer.music.get_busy() == True:
-            continue
+        while True:
+            if stopbutton.gpiozero.is_pressed:
+            pygame.mixer.music.stop()
+            elif playpausebutton.gpiozero.is_pressed:
+                if pygame.mixer.music.get_busy() == True:
+                    pygame.mixer.music.pause()
+                else:
+                    pygame.mixer.music.play()
+            elif trackforwardsbutton.gpiozero.is_pressed:
+                    #do something to skip forwards
+            elif trackbackbutton.gpiozero.is_pressed:
+                    #do something else to skip backwards
+            break
+while pygame.mixer.music.get_busy() == True:
+    continue
 while True:
     if ledbutton.gpiozero.is_pressed:
         if ledmode = ledmode1:
