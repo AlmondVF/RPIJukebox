@@ -29,22 +29,22 @@ for song in ListsOfSongs:
         file_path = '/home/almondvf/Music/' + song
         pygame.mixer.music.load(str(file_path))
         pygame.mixer.music.play()
-        if stopbutton.is_pressed:
+        if stopbutton.gpiozero.is_pressed:
             pygame.mixer.music.stop()
-        elif playpausebutton.is_pressed:
+        elif playpausebutton.gpiozero.is_pressed:
             if pygame.mixer.music.get_busy() == True:
                 pygame.mixer.music.pause()
             else:
                 pygame.mixer.music.play()
-        elif trackforwardsbutton.is_pressed:
+        elif trackforwardsbutton.gpiozero.is_pressed:
             #do something to skip forwards
-        elif trackbackbutton.is_pressed:
+        elif trackbackbutton.gpiozero.is_pressed:
             #do something else to skip backwards
         print('Playing ' + song)
         while pygame.mixer.music.get_busy() == True:
             continue
 while True:
-    if ledbutton.is_pressed:
+    if ledbutton.gpiozero.is_pressed:
         if ledmode = ledmode1:
         ledmode = ledmode2
         elif ledmode = ledmode2:
@@ -58,27 +58,27 @@ while True:
 ledmode1 = {
 while True:
 time.sleep(1)
-leds.value = 0 #LEDs are off
+leds.gpiozero.value = 0 #LEDs are off
 time.sleep(1)
-leds.value = 1 #LEDs are on
+leds.gpiozero.value = 1 #LEDs are on
 }
 
 #second Led mode is fade on fade off ...
 ledmode2 = {
 while True:
-leds.pulse() #LEDs fade in and out continiously
+leds.gpiozero.pulse() #LEDs fade in and out continiously
 }
 
 #third LED mode is always on
 ledmode3 = {
 while True:
-leds.value = 1 #LEDs are on
+leds.gpiozero.value = 1 #LEDs are on
 }
 
 #fourth LED mode is always off
 ledmode4 = {
 while True:
-leds.value = 0 #LEDs are off
+leds.gpiozero.value = 0 #LEDs are off
 }
 
 signal.pause()
