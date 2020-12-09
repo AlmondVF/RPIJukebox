@@ -22,12 +22,12 @@ leds = gpiozero.LEBboard(9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 
 pygame.init()
 pygame.mixer.init()
 
-ListsOfSongs = os.listdir('/home/almondvf/Music')
+Music = os.listdir('/home/almondvf/Music')
 
-for song in ListsOfSongs:
+for song in Music:
     if song.endswith('.mp3'):
-        file_path = '/home/almondvf/Music/' + song
-        pygame.mixer.music.load(str(file_path))
+        file = '/home/almondvf/Music/' + song
+        pygame.mixer.music.load(str(file))
         pygame.mixer.music.play()
         print('Playing ' + song)
         while True:
@@ -57,30 +57,29 @@ while True:
         ledmode = ledmode1
 
 #First LED mode is flash on off on off ...
-ledmode1 = {
-while True:
-    time.sleep(1)
-    leds.gpiozero.value = 0 #LEDs are off
-    time.sleep(1)
-    leds.gpiozero.value = 1 #LEDs are on
-}
+def ledmode1():
+    while True:
+        time.sleep(1)
+        leds.gpiozero.value = 0 #LEDs are off
+        time.sleep(1)
+        leds.gpiozero.value = 1 #LEDs are on
 
 #second Led mode is fade on fade off ...
-ledmode2 = {
-while True:
-    leds.gpiozero.pulse() #LEDs fade in and out continiously
-}
+def ledmode2():
+    while True:
+        leds.gpiozero.pulse() #LEDs fade in and out continiously
+
 
 #third LED mode is always on
-ledmode3 = {
-while True:
-    leds.gpiozero.value = 1 #LEDs are on
-}
+def ledmode3():
+    while True:
+        leds.gpiozero.value = 1 #LEDs are on
+
 
 #fourth LED mode is always off
-ledmode4 = {
-while True:
-    leds.gpiozero.value = 0 #LEDs are off
-}
+def ledmode4():
+    while True:
+        leds.gpiozero.value = 0 #LEDs are off
+
 
 signal.pause()
