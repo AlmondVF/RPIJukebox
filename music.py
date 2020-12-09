@@ -32,7 +32,7 @@ for song in Music:
         print('Playing ' + song)
         while True:
             if stopbutton.gpiozero.is_pressed:
-            pygame.mixer.music.stop()
+                pygame.mixer.music.stop()
             elif playpausebutton.gpiozero.is_pressed:
                 if pygame.mixer.music.get_busy() == True:
                     pygame.mixer.music.pause()
