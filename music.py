@@ -38,11 +38,7 @@ for song in Music:
                     pygame.mixer.music.pause()
                 else:
                     pygame.mixer.music.play()
-            elif trackforwardsbutton.gpiozero.is_pressed:
-                    #do something to skip forwards
-            elif trackbackbutton.gpiozero.is_pressed:
-                    #do something else to skip backwards
-            break
+        break
 while pygame.mixer.music.get_busy() == True:
     continue
 while True:
