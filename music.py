@@ -37,9 +37,9 @@ for song in ListsOfSongs:
             else:
                 pygame.mixer.music.play()
         elif trackforwardsbutton.is_pressed:
-            do something to skip forwards
+            #do something to skip forwards
         elif trackbackbutton.is_pressed:
-            do something else to skip backwards
+            #do something else to skip backwards
         print('Playing ' + song)
         while pygame.mixer.music.get_busy() == True:
             continue
