@@ -4,17 +4,17 @@ import time
 import gpiozero, random, sys, signal
 from subprocess import check_call
 #button for skipping back one track
-trackbackbutton = gpiozero.Button(3)
+trackbackbutton = gpiozero.Button(2)
 #button for play/pause control
-playpausebutton = gpiozero.Button(4)
+playpausebutton = gpiozero.Button(3)
 #button for skipping forwards one track
-trackforwardsbutton = gpiozero.Button(5)
+trackforwardsbutton = gpiozero.Button(4)
 #button to stop the music and set track = 0
-stopbutton = gpiozero.Button(6)
+stopbutton = gpiozero.Button(5)
 #button to shutdown the pi
-shutdownbutton = gpiozero.Button(7)
+shutdownbutton = gpiozero.Button(6)
 #button to change the led mode
-ledbutton = gpiozero.Button(8)
+ledbutton = gpiozero.Button(7)
 
 #LED setup
 leds = gpiozero.LEBboard(9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, pwm=True)
