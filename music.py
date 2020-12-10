@@ -39,8 +39,10 @@ for song in Music:
                 else:
                     pygame.mixer.music.play()
         break
+
 while pygame.mixer.music.get_busy() == True:
     continue
+
 while True:
     if ledbutton.gpiozero.is_pressed:
         if ledmode = ledmode1():
