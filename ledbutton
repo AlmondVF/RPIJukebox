@@ -13,4 +13,3 @@ while True:
             led.on
             sleep(0.5)
     sleep(0.1)
-pause()
