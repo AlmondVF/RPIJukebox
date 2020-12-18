@@ -38,20 +38,19 @@ for song in Music:
                     pygame.mixer.music.pause()
                 else:
                     pygame.mixer.music.play()
-        break
 
 while pygame.mixer.music.get_busy() == True:
     continue
 
 while True:
     if ledbutton.gpiozero.is_pressed:
-        if ledmode = ledmode1():
+        if ledmode == ledmode1():
         ledmode = ledmode2()
-    elif ledmode = ledmode2():
+    elif ledmode == ledmode2():
         ledmode = ledmode3()
-    elif ledmode = ledmode3():
+    elif ledmode == ledmode3():
         ledmode = ledmode4()
-    elif ledmode = ledmode4():
+    elif ledmode == ledmode4():
         ledmode = ledmode1()
 
 #First LED mode is flash on off on off ...
