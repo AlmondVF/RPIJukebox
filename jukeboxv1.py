@@ -39,6 +39,7 @@ for song in Music:
         pygame.mixer.music.play()
         print('Playing ' + song)
         while True:
+            led1.on()
             if stopbutton.is_pressed:
                 if flag2 == 0:
                     print('stopping')
@@ -50,60 +51,960 @@ for song in Music:
                     pygame.mixer.music.play()
                     sleep(0.5)
                     flag2 = 0
-            elif True:
-                if playpausebutton.is_pressed:
-                    if flag1 == 0:
-                        print('paused')
-                        pygame.mixer.music.pause()
-                        sleep(0.5)
-                        flag1 = 1
-                    elif flag1 == 1:
-                        print('playing')
-                        pygame.mixer.music.unpause()
-                        sleep(0.5)
-                        flag1 = 0
-                while pygame.mixer.music.get_busy() == True:
-                    continue
-                    led1.on()
-                    sleep(0.25)
-                    led2.on()
-                    sleep(0.25)
-                    led1.off()
-                    led3.on()
-                    sleep(0.25)
-                    led2.off()
-                    led4.on()
-                    led3.off()
-                    sleep(0.25)
-                    led5.on()
-                    led4.off()
-                    sleep(0.25)
-                    led6.on()
-                    led5.off()
-                    sleep(0.25)
-                    led7.on()
-                    led6.off()
-                    sleep(0.25)
-                    led8.on()
-                    led7.off()
-                    sleep(0.25)
-                    led9.on()
-                    led8.off()
-                    sleep(0.25)
-                    led10.on()
-                    led9.off()
-                    sleep(0.25)
-                    led11.on()
-                    led10.off()
-                    sleep(0.25)
-                    led12.on()
-                    led11.off()
-                    sleep(0.25)
-                    led13.on()
-                    led12.off()
-                    sleep(0.25)
-                    led14.on()
-                    led13.off()
-                    sleep(0.25)
-                    led14.off()
+            elif playpausebutton.is_pressed:
+                if flag1 == 0:
+                    print('paused')
+                    pygame.mixer.music.pause()
+                    sleep(0.5)
+                    flag1 = 1
+                elif flag1 == 1:
+                    print('playing')
+                    pygame.mixer.music.unpause()
+                    sleep(0.5)
+                    flag1 = 0
+            sleep(0.25)
+            if stopbutton.is_pressed:
+                if flag2 == 0:
+                    print('stopping')
+                    pygame.mixer.music.stop()
+                    sleep(0.5)
+                    flag2 = 1
+                elif flag2 == 1:
+                    print('starting')
+                    pygame.mixer.music.play()
+                    sleep(0.5)
+                    flag2 = 0
+            elif playpausebutton.is_pressed:
+                if flag1 == 0:
+                    print('paused')
+                    pygame.mixer.music.pause()
+                    sleep(0.5)
+                    flag1 = 1
+                elif flag1 == 1:
+                    print('playing')
+                    pygame.mixer.music.unpause()
+                    sleep(0.5)
+                    flag1 = 0
+            led2.on()
+            if stopbutton.is_pressed:
+                if flag2 == 0:
+                    print('stopping')
+                    pygame.mixer.music.stop()
+                    sleep(0.5)
+                    flag2 = 1
+                elif flag2 == 1:
+                    print('starting')
+                    pygame.mixer.music.play()
+                    sleep(0.5)
+                    flag2 = 0
+            elif playpausebutton.is_pressed:
+                if flag1 == 0:
+                    print('paused')
+                    pygame.mixer.music.pause()
+                    sleep(0.5)
+                    flag1 = 1
+                elif flag1 == 1:
+                    print('playing')
+                    pygame.mixer.music.unpause()
+                    sleep(0.5)
+                    flag1 = 0
+            sleep(0.25)
+            if stopbutton.is_pressed:
+                if flag2 == 0:
+                    print('stopping')
+                    pygame.mixer.music.stop()
+                    sleep(0.5)
+                    flag2 = 1
+                elif flag2 == 1:
+                    print('starting')
+                    pygame.mixer.music.play()
+                    sleep(0.5)
+                    flag2 = 0
+            elif playpausebutton.is_pressed:
+                if flag1 == 0:
+                    print('paused')
+                    pygame.mixer.music.pause()
+                    sleep(0.5)
+                    flag1 = 1
+                elif flag1 == 1:
+                    print('playing')
+                    pygame.mixer.music.unpause()
+                    sleep(0.5)
+                    flag1 = 0
+            led1.off()
+            if stopbutton.is_pressed:
+                if flag2 == 0:
+                    print('stopping')
+                    pygame.mixer.music.stop()
+                    sleep(0.5)
+                    flag2 = 1
+                elif flag2 == 1:
+                    print('starting')
+                    pygame.mixer.music.play()
+                    sleep(0.5)
+                    flag2 = 0
+            elif playpausebutton.is_pressed:
+                if flag1 == 0:
+                    print('paused')
+                    pygame.mixer.music.pause()
+                    sleep(0.5)
+                    flag1 = 1
+                elif flag1 == 1:
+                    print('playing')
+                    pygame.mixer.music.unpause()
+                    sleep(0.5)
+                    flag1 = 0
+            led3.on()
+            if stopbutton.is_pressed:
+                if flag2 == 0:
+                    print('stopping')
+                    pygame.mixer.music.stop()
+                    sleep(0.5)
+                    flag2 = 1
+                elif flag2 == 1:
+                    print('starting')
+                    pygame.mixer.music.play()
+                    sleep(0.5)
+                    flag2 = 0
+            elif playpausebutton.is_pressed:
+                if flag1 == 0:
+                    print('paused')
+                    pygame.mixer.music.pause()
+                    sleep(0.5)
+                    flag1 = 1
+                elif flag1 == 1:
+                    print('playing')
+                    pygame.mixer.music.unpause()
+                    sleep(0.5)
+                    flag1 = 0
+            sleep(0.25)
+            if stopbutton.is_pressed:
+                if flag2 == 0:
+                    print('stopping')
+                    pygame.mixer.music.stop()
+                    sleep(0.5)
+                    flag2 = 1
+                elif flag2 == 1:
+                    print('starting')
+                    pygame.mixer.music.play()
+                    sleep(0.5)
+                    flag2 = 0
+            elif playpausebutton.is_pressed:
+                if flag1 == 0:
+                    print('paused')
+                    pygame.mixer.music.pause()
+                    sleep(0.5)
+                    flag1 = 1
+                elif flag1 == 1:
+                    print('playing')
+                    pygame.mixer.music.unpause()
+                    sleep(0.5)
+                    flag1 = 0
+            led2.off()
+            if stopbutton.is_pressed:
+                if flag2 == 0:
+                    print('stopping')
+                    pygame.mixer.music.stop()
+                    sleep(0.5)
+                    flag2 = 1
+                elif flag2 == 1:
+                    print('starting')
+                    pygame.mixer.music.play()
+                    sleep(0.5)
+                    flag2 = 0
+            elif playpausebutton.is_pressed:
+                if flag1 == 0:
+                    print('paused')
+                    pygame.mixer.music.pause()
+                    sleep(0.5)
+                    flag1 = 1
+                elif flag1 == 1:
+                    print('playing')
+                    pygame.mixer.music.unpause()
+                    sleep(0.5)
+                    flag1 = 0
+            led4.on()
+            if stopbutton.is_pressed:
+                if flag2 == 0:
+                    print('stopping')
+                    pygame.mixer.music.stop()
+                    sleep(0.5)
+                    flag2 = 1
+                elif flag2 == 1:
+                    print('starting')
+                    pygame.mixer.music.play()
+                    sleep(0.5)
+                    flag2 = 0
+            elif playpausebutton.is_pressed:
+                if flag1 == 0:
+                    print('paused')
+                    pygame.mixer.music.pause()
+                    sleep(0.5)
+                    flag1 = 1
+                elif flag1 == 1:
+                    print('playing')
+                    pygame.mixer.music.unpause()
+                    sleep(0.5)
+                    flag1 = 0
+            led3.off()
+            if stopbutton.is_pressed:
+                if flag2 == 0:
+                    print('stopping')
+                    pygame.mixer.music.stop()
+                    sleep(0.5)
+                    flag2 = 1
+                elif flag2 == 1:
+                    print('starting')
+                    pygame.mixer.music.play()
+                    sleep(0.5)
+                    flag2 = 0
+            elif playpausebutton.is_pressed:
+                if flag1 == 0:
+                    print('paused')
+                    pygame.mixer.music.pause()
+                    sleep(0.5)
+                    flag1 = 1
+                elif flag1 == 1:
+                    print('playing')
+                    pygame.mixer.music.unpause()
+                    sleep(0.5)
+                    flag1 = 0
+            sleep(0.25)
+            if stopbutton.is_pressed:
+                if flag2 == 0:
+                    print('stopping')
+                    pygame.mixer.music.stop()
+                    sleep(0.5)
+                    flag2 = 1
+                elif flag2 == 1:
+                    print('starting')
+                    pygame.mixer.music.play()
+                    sleep(0.5)
+                    flag2 = 0
+            elif playpausebutton.is_pressed:
+                if flag1 == 0:
+                    print('paused')
+                    pygame.mixer.music.pause()
+                    sleep(0.5)
+                    flag1 = 1
+                elif flag1 == 1:
+                    print('playing')
+                    pygame.mixer.music.unpause()
+                    sleep(0.5)
+                    flag1 = 0
+            led5.on()
+            if stopbutton.is_pressed:
+                if flag2 == 0:
+                    print('stopping')
+                    pygame.mixer.music.stop()
+                    sleep(0.5)
+                    flag2 = 1
+                elif flag2 == 1:
+                    print('starting')
+                    pygame.mixer.music.play()
+                    sleep(0.5)
+                    flag2 = 0
+            elif playpausebutton.is_pressed:
+                if flag1 == 0:
+                    print('paused')
+                    pygame.mixer.music.pause()
+                    sleep(0.5)
+                    flag1 = 1
+                elif flag1 == 1:
+                    print('playing')
+                    pygame.mixer.music.unpause()
+                    sleep(0.5)
+                    flag1 = 0
+            led4.off()
+            if stopbutton.is_pressed:
+                if flag2 == 0:
+                    print('stopping')
+                    pygame.mixer.music.stop()
+                    sleep(0.5)
+                    flag2 = 1
+                elif flag2 == 1:
+                    print('starting')
+                    pygame.mixer.music.play()
+                    sleep(0.5)
+                    flag2 = 0
+            elif playpausebutton.is_pressed:
+                if flag1 == 0:
+                    print('paused')
+                    pygame.mixer.music.pause()
+                    sleep(0.5)
+                    flag1 = 1
+                elif flag1 == 1:
+                    print('playing')
+                    pygame.mixer.music.unpause()
+                    sleep(0.5)
+                    flag1 = 0
+            sleep(0.25)
+            if stopbutton.is_pressed:
+                if flag2 == 0:
+                    print('stopping')
+                    pygame.mixer.music.stop()
+                    sleep(0.5)
+                    flag2 = 1
+                elif flag2 == 1:
+                    print('starting')
+                    pygame.mixer.music.play()
+                    sleep(0.5)
+                    flag2 = 0
+            elif playpausebutton.is_pressed:
+                if flag1 == 0:
+                    print('paused')
+                    pygame.mixer.music.pause()
+                    sleep(0.5)
+                    flag1 = 1
+                elif flag1 == 1:
+                    print('playing')
+                    pygame.mixer.music.unpause()
+                    sleep(0.5)
+                    flag1 = 0
+            led6.on()
+            if stopbutton.is_pressed:
+                if flag2 == 0:
+                    print('stopping')
+                    pygame.mixer.music.stop()
+                    sleep(0.5)
+                    flag2 = 1
+                elif flag2 == 1:
+                    print('starting')
+                    pygame.mixer.music.play()
+                    sleep(0.5)
+                    flag2 = 0
+            elif playpausebutton.is_pressed:
+                if flag1 == 0:
+                    print('paused')
+                    pygame.mixer.music.pause()
+                    sleep(0.5)
+                    flag1 = 1
+                elif flag1 == 1:
+                    print('playing')
+                    pygame.mixer.music.unpause()
+                    sleep(0.5)
+                    flag1 = 0
+            led5.off()
+            if stopbutton.is_pressed:
+                if flag2 == 0:
+                    print('stopping')
+                    pygame.mixer.music.stop()
+                    sleep(0.5)
+                    flag2 = 1
+                elif flag2 == 1:
+                    print('starting')
+                    pygame.mixer.music.play()
+                    sleep(0.5)
+                    flag2 = 0
+            elif playpausebutton.is_pressed:
+                if flag1 == 0:
+                    print('paused')
+                    pygame.mixer.music.pause()
+                    sleep(0.5)
+                    flag1 = 1
+                elif flag1 == 1:
+                    print('playing')
+                    pygame.mixer.music.unpause()
+                    sleep(0.5)
+                    flag1 = 0
+            sleep(0.25)
+            if stopbutton.is_pressed:
+                if flag2 == 0:
+                    print('stopping')
+                    pygame.mixer.music.stop()
+                    sleep(0.5)
+                    flag2 = 1
+                elif flag2 == 1:
+                    print('starting')
+                    pygame.mixer.music.play()
+                    sleep(0.5)
+                    flag2 = 0
+            elif playpausebutton.is_pressed:
+                if flag1 == 0:
+                    print('paused')
+                    pygame.mixer.music.pause()
+                    sleep(0.5)
+                    flag1 = 1
+                elif flag1 == 1:
+                    print('playing')
+                    pygame.mixer.music.unpause()
+                    sleep(0.5)
+                    flag1 = 0
+            led7.on()
+            if stopbutton.is_pressed:
+                if flag2 == 0:
+                    print('stopping')
+                    pygame.mixer.music.stop()
+                    sleep(0.5)
+                    flag2 = 1
+                elif flag2 == 1:
+                    print('starting')
+                    pygame.mixer.music.play()
+                    sleep(0.5)
+                    flag2 = 0
+            elif playpausebutton.is_pressed:
+                if flag1 == 0:
+                    print('paused')
+                    pygame.mixer.music.pause()
+                    sleep(0.5)
+                    flag1 = 1
+                elif flag1 == 1:
+                    print('playing')
+                    pygame.mixer.music.unpause()
+                    sleep(0.5)
+                    flag1 = 0
+            led6.off()
+            if stopbutton.is_pressed:
+                if flag2 == 0:
+                    print('stopping')
+                    pygame.mixer.music.stop()
+                    sleep(0.5)
+                    flag2 = 1
+                elif flag2 == 1:
+                    print('starting')
+                    pygame.mixer.music.play()
+                    sleep(0.5)
+                    flag2 = 0
+            elif playpausebutton.is_pressed:
+                if flag1 == 0:
+                    print('paused')
+                    pygame.mixer.music.pause()
+                    sleep(0.5)
+                    flag1 = 1
+                elif flag1 == 1:
+                    print('playing')
+                    pygame.mixer.music.unpause()
+                    sleep(0.5)
+                    flag1 = 0
+            sleep(0.25)
+            if stopbutton.is_pressed:
+                if flag2 == 0:
+                    print('stopping')
+                    pygame.mixer.music.stop()
+                    sleep(0.5)
+                    flag2 = 1
+                elif flag2 == 1:
+                    print('starting')
+                    pygame.mixer.music.play()
+                    sleep(0.5)
+                    flag2 = 0
+            elif playpausebutton.is_pressed:
+                if flag1 == 0:
+                    print('paused')
+                    pygame.mixer.music.pause()
+                    sleep(0.5)
+                    flag1 = 1
+                elif flag1 == 1:
+                    print('playing')
+                    pygame.mixer.music.unpause()
+                    sleep(0.5)
+                    flag1 = 0
+            led8.on()
+            if stopbutton.is_pressed:
+                if flag2 == 0:
+                    print('stopping')
+                    pygame.mixer.music.stop()
+                    sleep(0.5)
+                    flag2 = 1
+                elif flag2 == 1:
+                    print('starting')
+                    pygame.mixer.music.play()
+                    sleep(0.5)
+                    flag2 = 0
+            elif playpausebutton.is_pressed:
+                if flag1 == 0:
+                    print('paused')
+                    pygame.mixer.music.pause()
+                    sleep(0.5)
+                    flag1 = 1
+                elif flag1 == 1:
+                    print('playing')
+                    pygame.mixer.music.unpause()
+                    sleep(0.5)
+                    flag1 = 0
+            led7.off()
+            if stopbutton.is_pressed:
+                if flag2 == 0:
+                    print('stopping')
+                    pygame.mixer.music.stop()
+                    sleep(0.5)
+                    flag2 = 1
+                elif flag2 == 1:
+                    print('starting')
+                    pygame.mixer.music.play()
+                    sleep(0.5)
+                    flag2 = 0
+            elif playpausebutton.is_pressed:
+                if flag1 == 0:
+                    print('paused')
+                    pygame.mixer.music.pause()
+                    sleep(0.5)
+                    flag1 = 1
+                elif flag1 == 1:
+                    print('playing')
+                    pygame.mixer.music.unpause()
+                    sleep(0.5)
+                    flag1 = 0
+            sleep(0.25)
+            if stopbutton.is_pressed:
+                if flag2 == 0:
+                    print('stopping')
+                    pygame.mixer.music.stop()
+                    sleep(0.5)
+                    flag2 = 1
+                elif flag2 == 1:
+                    print('starting')
+                    pygame.mixer.music.play()
+                    sleep(0.5)
+                    flag2 = 0
+            elif playpausebutton.is_pressed:
+                if flag1 == 0:
+                    print('paused')
+                    pygame.mixer.music.pause()
+                    sleep(0.5)
+                    flag1 = 1
+                elif flag1 == 1:
+                    print('playing')
+                    pygame.mixer.music.unpause()
+                    sleep(0.5)
+                    flag1 = 0
+            led9.on()
+            if stopbutton.is_pressed:
+                if flag2 == 0:
+                    print('stopping')
+                    pygame.mixer.music.stop()
+                    sleep(0.5)
+                    flag2 = 1
+                elif flag2 == 1:
+                    print('starting')
+                    pygame.mixer.music.play()
+                    sleep(0.5)
+                    flag2 = 0
+            elif playpausebutton.is_pressed:
+                if flag1 == 0:
+                    print('paused')
+                    pygame.mixer.music.pause()
+                    sleep(0.5)
+                    flag1 = 1
+                elif flag1 == 1:
+                    print('playing')
+                    pygame.mixer.music.unpause()
+                    sleep(0.5)
+                    flag1 = 0
+            led8.off()
+            if stopbutton.is_pressed:
+                if flag2 == 0:
+                    print('stopping')
+                    pygame.mixer.music.stop()
+                    sleep(0.5)
+                    flag2 = 1
+                elif flag2 == 1:
+                    print('starting')
+                    pygame.mixer.music.play()
+                    sleep(0.5)
+                    flag2 = 0
+            elif playpausebutton.is_pressed:
+                if flag1 == 0:
+                    print('paused')
+                    pygame.mixer.music.pause()
+                    sleep(0.5)
+                    flag1 = 1
+                elif flag1 == 1:
+                    print('playing')
+                    pygame.mixer.music.unpause()
+                    sleep(0.5)
+                    flag1 = 0
+            sleep(0.25)
+            if stopbutton.is_pressed:
+                if flag2 == 0:
+                    print('stopping')
+                    pygame.mixer.music.stop()
+                    sleep(0.5)
+                    flag2 = 1
+                elif flag2 == 1:
+                    print('starting')
+                    pygame.mixer.music.play()
+                    sleep(0.5)
+                    flag2 = 0
+            elif playpausebutton.is_pressed:
+                if flag1 == 0:
+                    print('paused')
+                    pygame.mixer.music.pause()
+                    sleep(0.5)
+                    flag1 = 1
+                elif flag1 == 1:
+                    print('playing')
+                    pygame.mixer.music.unpause()
+                    sleep(0.5)
+                    flag1 = 0
+            led10.on()
+            if stopbutton.is_pressed:
+                if flag2 == 0:
+                    print('stopping')
+                    pygame.mixer.music.stop()
+                    sleep(0.5)
+                    flag2 = 1
+                elif flag2 == 1:
+                    print('starting')
+                    pygame.mixer.music.play()
+                    sleep(0.5)
+                    flag2 = 0
+            elif playpausebutton.is_pressed:
+                if flag1 == 0:
+                    print('paused')
+                    pygame.mixer.music.pause()
+                    sleep(0.5)
+                    flag1 = 1
+                elif flag1 == 1:
+                    print('playing')
+                    pygame.mixer.music.unpause()
+                    sleep(0.5)
+                    flag1 = 0
+            led9.off()
+            if stopbutton.is_pressed:
+                if flag2 == 0:
+                    print('stopping')
+                    pygame.mixer.music.stop()
+                    sleep(0.5)
+                    flag2 = 1
+                elif flag2 == 1:
+                    print('starting')
+                    pygame.mixer.music.play()
+                    sleep(0.5)
+                    flag2 = 0
+            elif playpausebutton.is_pressed:
+                if flag1 == 0:
+                    print('paused')
+                    pygame.mixer.music.pause()
+                    sleep(0.5)
+                    flag1 = 1
+                elif flag1 == 1:
+                    print('playing')
+                    pygame.mixer.music.unpause()
+                    sleep(0.5)
+                    flag1 = 0
+            sleep(0.25)
+            if stopbutton.is_pressed:
+                if flag2 == 0:
+                    print('stopping')
+                    pygame.mixer.music.stop()
+                    sleep(0.5)
+                    flag2 = 1
+                elif flag2 == 1:
+                    print('starting')
+                    pygame.mixer.music.play()
+                    sleep(0.5)
+                    flag2 = 0
+            elif playpausebutton.is_pressed:
+                if flag1 == 0:
+                    print('paused')
+                    pygame.mixer.music.pause()
+                    sleep(0.5)
+                    flag1 = 1
+                elif flag1 == 1:
+                    print('playing')
+                    pygame.mixer.music.unpause()
+                    sleep(0.5)
+                    flag1 = 0
+            led11.on()
+            if stopbutton.is_pressed:
+                if flag2 == 0:
+                    print('stopping')
+                    pygame.mixer.music.stop()
+                    sleep(0.5)
+                    flag2 = 1
+                elif flag2 == 1:
+                    print('starting')
+                    pygame.mixer.music.play()
+                    sleep(0.5)
+                    flag2 = 0
+            elif playpausebutton.is_pressed:
+                if flag1 == 0:
+                    print('paused')
+                    pygame.mixer.music.pause()
+                    sleep(0.5)
+                    flag1 = 1
+                elif flag1 == 1:
+                    print('playing')
+                    pygame.mixer.music.unpause()
+                    sleep(0.5)
+                    flag1 = 0
+            led10.off()
+            if stopbutton.is_pressed:
+                if flag2 == 0:
+                    print('stopping')
+                    pygame.mixer.music.stop()
+                    sleep(0.5)
+                    flag2 = 1
+                elif flag2 == 1:
+                    print('starting')
+                    pygame.mixer.music.play()
+                    sleep(0.5)
+                    flag2 = 0
+            elif playpausebutton.is_pressed:
+                if flag1 == 0:
+                    print('paused')
+                    pygame.mixer.music.pause()
+                    sleep(0.5)
+                    flag1 = 1
+                elif flag1 == 1:
+                    print('playing')
+                    pygame.mixer.music.unpause()
+                    sleep(0.5)
+                    flag1 = 0
+            sleep(0.25)
+            if stopbutton.is_pressed:
+                if flag2 == 0:
+                    print('stopping')
+                    pygame.mixer.music.stop()
+                    sleep(0.5)
+                    flag2 = 1
+                elif flag2 == 1:
+                    print('starting')
+                    pygame.mixer.music.play()
+                    sleep(0.5)
+                    flag2 = 0
+            elif playpausebutton.is_pressed:
+                if flag1 == 0:
+                    print('paused')
+                    pygame.mixer.music.pause()
+                    sleep(0.5)
+                    flag1 = 1
+                elif flag1 == 1:
+                    print('playing')
+                    pygame.mixer.music.unpause()
+                    sleep(0.5)
+                    flag1 = 0
+            led12.on()
+            if stopbutton.is_pressed:
+                if flag2 == 0:
+                    print('stopping')
+                    pygame.mixer.music.stop()
+                    sleep(0.5)
+                    flag2 = 1
+                elif flag2 == 1:
+                    print('starting')
+                    pygame.mixer.music.play()
+                    sleep(0.5)
+                    flag2 = 0
+            elif playpausebutton.is_pressed:
+                if flag1 == 0:
+                    print('paused')
+                    pygame.mixer.music.pause()
+                    sleep(0.5)
+                    flag1 = 1
+                elif flag1 == 1:
+                    print('playing')
+                    pygame.mixer.music.unpause()
+                    sleep(0.5)
+                    flag1 = 0
+            led11.off()
+            if stopbutton.is_pressed:
+                if flag2 == 0:
+                    print('stopping')
+                    pygame.mixer.music.stop()
+                    sleep(0.5)
+                    flag2 = 1
+                elif flag2 == 1:
+                    print('starting')
+                    pygame.mixer.music.play()
+                    sleep(0.5)
+                    flag2 = 0
+            elif playpausebutton.is_pressed:
+                if flag1 == 0:
+                    print('paused')
+                    pygame.mixer.music.pause()
+                    sleep(0.5)
+                    flag1 = 1
+                elif flag1 == 1:
+                    print('playing')
+                    pygame.mixer.music.unpause()
+                    sleep(0.5)
+                    flag1 = 0
+            sleep(0.25)
+            if stopbutton.is_pressed:
+                if flag2 == 0:
+                    print('stopping')
+                    pygame.mixer.music.stop()
+                    sleep(0.5)
+                    flag2 = 1
+                elif flag2 == 1:
+                    print('starting')
+                    pygame.mixer.music.play()
+                    sleep(0.5)
+                    flag2 = 0
+            elif playpausebutton.is_pressed:
+                if flag1 == 0:
+                    print('paused')
+                    pygame.mixer.music.pause()
+                    sleep(0.5)
+                    flag1 = 1
+                elif flag1 == 1:
+                    print('playing')
+                    pygame.mixer.music.unpause()
+                    sleep(0.5)
+                    flag1 = 0
+            led13.on()
+            if stopbutton.is_pressed:
+                if flag2 == 0:
+                    print('stopping')
+                    pygame.mixer.music.stop()
+                    sleep(0.5)
+                    flag2 = 1
+                elif flag2 == 1:
+                    print('starting')
+                    pygame.mixer.music.play()
+                    sleep(0.5)
+                    flag2 = 0
+            elif playpausebutton.is_pressed:
+                if flag1 == 0:
+                    print('paused')
+                    pygame.mixer.music.pause()
+                    sleep(0.5)
+                    flag1 = 1
+                elif flag1 == 1:
+                    print('playing')
+                    pygame.mixer.music.unpause()
+                    sleep(0.5)
+                    flag1 = 0
+            led12.off()
+            if stopbutton.is_pressed:
+                if flag2 == 0:
+                    print('stopping')
+                    pygame.mixer.music.stop()
+                    sleep(0.5)
+                    flag2 = 1
+                elif flag2 == 1:
+                    print('starting')
+                    pygame.mixer.music.play()
+                    sleep(0.5)
+                    flag2 = 0
+            elif playpausebutton.is_pressed:
+                if flag1 == 0:
+                    print('paused')
+                    pygame.mixer.music.pause()
+                    sleep(0.5)
+                    flag1 = 1
+                elif flag1 == 1:
+                    print('playing')
+                    pygame.mixer.music.unpause()
+                    sleep(0.5)
+                    flag1 = 0
+            sleep(0.25)
+            if stopbutton.is_pressed:
+                if flag2 == 0:
+                    print('stopping')
+                    pygame.mixer.music.stop()
+                    sleep(0.5)
+                    flag2 = 1
+                elif flag2 == 1:
+                    print('starting')
+                    pygame.mixer.music.play()
+                    sleep(0.5)
+                    flag2 = 0
+            elif playpausebutton.is_pressed:
+                if flag1 == 0:
+                    print('paused')
+                    pygame.mixer.music.pause()
+                    sleep(0.5)
+                    flag1 = 1
+                elif flag1 == 1:
+                    print('playing')
+                    pygame.mixer.music.unpause()
+                    sleep(0.5)
+                    flag1 = 0
+            led14.on()
+            if stopbutton.is_pressed:
+                if flag2 == 0:
+                    print('stopping')
+                    pygame.mixer.music.stop()
+                    sleep(0.5)
+                    flag2 = 1
+                elif flag2 == 1:
+                    print('starting')
+                    pygame.mixer.music.play()
+                    sleep(0.5)
+                    flag2 = 0
+            elif playpausebutton.is_pressed:
+                if flag1 == 0:
+                    print('paused')
+                    pygame.mixer.music.pause()
+                    sleep(0.5)
+                    flag1 = 1
+                elif flag1 == 1:
+                    print('playing')
+                    pygame.mixer.music.unpause()
+                    sleep(0.5)
+                    flag1 = 0
+            led13.off()
+            if stopbutton.is_pressed:
+                if flag2 == 0:
+                    print('stopping')
+                    pygame.mixer.music.stop()
+                    sleep(0.5)
+                    flag2 = 1
+                elif flag2 == 1:
+                    print('starting')
+                    pygame.mixer.music.play()
+                    sleep(0.5)
+                    flag2 = 0
+            elif playpausebutton.is_pressed:
+                if flag1 == 0:
+                    print('paused')
+                    pygame.mixer.music.pause()
+                    sleep(0.5)
+                    flag1 = 1
+                elif flag1 == 1:
+                    print('playing')
+                    pygame.mixer.music.unpause()
+                    sleep(0.5)
+                    flag1 = 0
+            sleep(0.25)
+            if stopbutton.is_pressed:
+                if flag2 == 0:
+                    print('stopping')
+                    pygame.mixer.music.stop()
+                    sleep(0.5)
+                    flag2 = 1
+                elif flag2 == 1:
+                    print('starting')
+                    pygame.mixer.music.play()
+                    sleep(0.5)
+                    flag2 = 0
+            elif playpausebutton.is_pressed:
+                if flag1 == 0:
+                    print('paused')
+                    pygame.mixer.music.pause()
+                    sleep(0.5)
+                    flag1 = 1
+                elif flag1 == 1:
+                    print('playing')
+                    pygame.mixer.music.unpause()
+                    sleep(0.5)
+                    flag1 = 0
+            led14.off()
+            if stopbutton.is_pressed:
+                if flag2 == 0:
+                    print('stopping')
+                    pygame.mixer.music.stop()
+                    sleep(0.5)
+                    flag2 = 1
+                elif flag2 == 1:
+                    print('starting')
+                    pygame.mixer.music.play()
+                    sleep(0.5)
+                    flag2 = 0
+            elif playpausebutton.is_pressed:
+                if flag1 == 0:
+                    print('paused')
+                    pygame.mixer.music.pause()
+                    sleep(0.5)
+                    flag1 = 1
+                elif flag1 == 1:
+                    print('playing')
+                    pygame.mixer.music.unpause()
+                    sleep(0.5)
+                    flag1 = 0
+
+
 pause()
